@@ -1,0 +1,30 @@
+.statistics{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 220px;
+    margin: 10px auto;
+    padding: 10px 0;
+    text-align: center;
+    background-color: rgb(218, 215, 215);
+
+}
+
+.statList{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+
+.stat{
+ width: 44px;   
+ display: flex;
+ flex-direction: column;   
+}
+
+.stat:not(:last-child){
+border-right: 1px solid lightslategray;
+}
