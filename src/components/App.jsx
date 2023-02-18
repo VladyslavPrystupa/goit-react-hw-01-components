@@ -1,9 +1,8 @@
-import { GlobalStyle } from 'GlobalStyles';
-
 import { FriendsList } from './FriendsList/FriendsList';
 import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
 import { TransactionsHistory } from './TransactionHistory/TransactionHistory';
+import { GlobalStyle } from 'GlobalStyles';
 
 import user from 'data/user.json';
 import data from 'data/data.json';

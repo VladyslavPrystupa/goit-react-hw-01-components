@@ -1,30 +1,13 @@
 import propTypes from 'prop-types';
-import { ListOfFriends, Friend, FriendStatus } from './FriendsList.styled';
-
+import { ListOfFriends, SectionOfFriends } from './FriendsList.styled';
+import { FriendName } from 'components/FriendName/FriendName';
 export const FriendsList = ({ friends }) => {
   return (
-    <div
-      style={{
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        width: '320px',
-      }}
-    >
+    <SectionOfFriends>
       <ListOfFriends>
-        {friends.map(friend => (
-          <Friend key={friend.id}>
-            <FriendStatus isOnline={friend.isOnline}></FriendStatus>
-            <img
-              style={{ marginRight: '10px' }}
-              src={friend.avatar}
-              alt="User avatar"
-              width="48"
-            />
-            <p>{friend.name}</p>
-          </Friend>
-        ))}
+        <FriendName friends={friends} />
       </ListOfFriends>
-    </div>
+    </SectionOfFriends>
   );
 };
 
