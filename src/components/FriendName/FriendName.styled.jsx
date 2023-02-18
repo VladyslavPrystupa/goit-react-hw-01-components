@@ -17,7 +17,6 @@ export const FriendStatus = styled.span`
   border-radius: 50%;
   margin-right: 10px;
   background-color: ${props => {
-    console.log(props);
     if (props.isOnline) {
       return 'green';
     } else {
